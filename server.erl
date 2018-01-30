@@ -41,9 +41,9 @@ server(List)->%%Funcion principal del server, se encarga de responde a los clien
 	end,
 	server(L).
 
-init()->
+init(Puerto)->
 	Pid = spawn(fun() -> server([]) end),
-	spawn(?MODULE,main,[?PUERTO,Pid]).
+	spawn(?MODULE,main,[Puerto,Pid]).
 
 main(Puerto,Server)->%%Crea un socket y va a esperar conexiones
 	Opciones = [{active, true}, {mode, binary}],
