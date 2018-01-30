@@ -1,6 +1,6 @@
 -module(server).
 -compile(export_all).
--export([init/0]).
+-export([init/1]).
 
 -define(PUERTO,8000).
 
