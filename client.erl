@@ -2,7 +2,7 @@
 -compile(export_all).
 -export([init/0]).
 
--define(PUERTO, 8002).
+-define(PUERTO, 8000).
 -define(HOST, {127, 0, 0, 1}).
 
 username(Socket)->%%Lee un nombre de usuario
