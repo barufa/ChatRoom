@@ -2,7 +2,7 @@
 -compile(export_all).
 -export([init/0]).
 
--define(PUERTO,8002).
+-define(PUERTO,8000).
 
 update(List,Pid,Nombre)->%%Agrega un Nombre si esta disponible
 	case lists:any(fun({_Id,N}) -> N==Nombre end,List) of
